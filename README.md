@@ -1,0 +1,1 @@
+Rails sign up form subscribe your email using mailchimp api.
