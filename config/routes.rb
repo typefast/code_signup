@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
   
-  get 'visitors/index'
-
   resources :visitors
-  root 'visitors#index'
+  root 'visitors#new'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
