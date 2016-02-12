@@ -6,15 +6,7 @@ class Visitor < ActiveRecord::Base
   after_create :subscribe
   
   def subscribe
-    mailchimp = Gibbon::Request.new(api_key: Rails.application.secrets.mailchimp_api_key)
-    list_id = Rails.application.secrets.mailchimp_list_id
-    result = mailchimp.lists(list_id).members.create(
-      body: {
-        email_address: self.email,
-        status: 'subscribed',
-        merge_fields: {FNAME: self.name}
-      })
-      Rails.logger.info("Subscribed #{self.email} to mailchimp") if result
+    MailingListSignupJob.perform_later(self)
   end
   
 end
