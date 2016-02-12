@@ -12,7 +12,7 @@ class Visitor < ActiveRecord::Base
       body: {
         email_address: self.email,
         status: 'subscribed',
-        merge_fields: {name: self.name}
+        merge_fields: {FNAME: self.name}
       })
       Rails.logger.info("Subscribed #{self.email} to mailchimp") if result
   end
