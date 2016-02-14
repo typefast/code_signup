@@ -1,16 +1,23 @@
-<section class="text-center">
-  <div class="row">
-    <h2>Sign up for the code tutorials!</h2>
+<section class="text-center main-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Sign up for the code tutorials!</h2>
+      </div>
+    </div>
   </div>
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <%= simple_form_for @visitor do |f| %>
-        <%= f.error_notification %>
-        <%= f.input :name, label: false, :placeholder => "Name", input_html: { class: 'no-border' } %>
-        <%= f.input :email, label: false, :placeholder => 'Email', input_html: { class: 'no-border' } %>
-        <br/>
-        <%= f.button :submit, "Sign up for the tutorials", :class => "btn btn-primary" %>
-      <% end %>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <%= simple_form_for @visitor do |f| %>
+          <%= f.error_notification %>
+          <%= f.input :name, label: false, :placeholder => "Name", input_html: { class: 'no-border input-margin' } %>
+          <%= f.input :email, label: false, :placeholder => 'Email', input_html: { class: 'no-border input-margin' } %>
+          <br/>
+          <%= f.button :submit, "Sign up for the tutorials", :class => "btn btn-primary no-border" %>
+        <% end %>
+      </div>
     </div>
   </div>
 </section>

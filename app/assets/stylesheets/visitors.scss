@@ -2,6 +2,26 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.main-section {
+	background: url('http://res.cloudinary.com/dq2bsl9c5/image/upload/v1455445855/computer_r9sebm.jpg') center center no-repeat;
+	background-size: cover;
+	padding: 2em;
+	min-height: 60vh;
+	
+	h2 {
+		color: #fff;
+		letter-spacing: 1.3px;
+	}
+}
+
 .no-border {
 	border-radius: 0px;
+}
+
+.input-margin {
+	margin: 1.7em 0;
+} 
+
+.no-margin {
+	margin-bottom: 0;
 }
