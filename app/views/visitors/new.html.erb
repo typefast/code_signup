@@ -6,8 +6,8 @@
     <div class="col-md-6 col-md-offset-3">
       <%= simple_form_for @visitor do |f| %>
         <%= f.error_notification %>
-        <%= f.input :name, label: false, :placeholder => "Name", class: 'no-border' %>
-        <%= f.input :email, label: false, :placeholder => 'Email' %>
+        <%= f.input :name, label: false, :placeholder => "Name", input_html: { class: 'no-border' } %>
+        <%= f.input :email, label: false, :placeholder => 'Email', input_html: { class: 'no-border' } %>
         <br/>
         <%= f.button :submit, "Sign up for the tutorials", :class => "btn btn-primary" %>
       <% end %>
