@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+p {
+	font-size: 1.2em;
+}
+
 .main-section {
 	background: url('http://res.cloudinary.com/dq2bsl9c5/image/upload/v1455445855/computer_r9sebm.jpg') center center no-repeat;
 	background-size: cover;
