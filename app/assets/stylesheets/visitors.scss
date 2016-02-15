@@ -36,3 +36,16 @@ img {
 	max-width: 60%;
 	padding: 1em 0;
 }
+
+.center-image {
+	float:none;
+  display:inline-block;
+  vertical-align:middle;
+  margin-right:-4px;
+}
+
+.footer {
+	border-top: 1px solid #eee;
+	padding: 2em 0;
+}
+
